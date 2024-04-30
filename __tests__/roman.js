@@ -20,4 +20,11 @@ test("returns true if each if statement runs once", function () {
     expect(roman(1166)).toBe("MCLXVI")
 })
 
+test("tests that 0 returns false", function () {
+    expect(roman(0)).toBe(false)
+})
+
+test("tests that anythong above 3999 returns false", function () {
+    expect(roman(4000)).toBe(false)
+})
 
