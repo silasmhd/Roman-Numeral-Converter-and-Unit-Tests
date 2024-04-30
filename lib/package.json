@@ -1,0 +1,8 @@
+{
+    "name": "assignment-2",
+    "version": "1.0.0",
+    "description": "Unit Testing and TDD",
+    "scripts": {
+        "test": "jest"
+    }
+  }
