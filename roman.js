@@ -5,7 +5,12 @@ module.exports = function roman(number) {
     if (!Number.isInteger(number)) {
         return false
     }
-
+    
+    let romanval = ""
+    if (number >= 1000){
+        number -= 1000
+        romanval += "M"
+    } 
 
     return romanval;
 };
