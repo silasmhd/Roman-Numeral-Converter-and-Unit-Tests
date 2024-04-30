@@ -15,3 +15,9 @@ test("Returns true since the input is an integer", function () {
 test("tests that the while loop works", function () {
     expect(roman(3000)).toBe("MMM")
 })
+
+test("returns true if each if statement runs once", function () {
+    expect(roman(1166)).toBe("MCLXVI")
+})
+
+
