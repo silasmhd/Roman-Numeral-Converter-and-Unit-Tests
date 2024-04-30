@@ -7,10 +7,12 @@ module.exports = function roman(number) {
     }
     
     let romanval = ""
-    if (number >= 1000){
-        number -= 1000
-        romanval += "M"
-    } 
+    while(number > 0){
+        if (number >= 1000){
+            number -= 1000
+            romanval += "M"
+        } 
+    }
 
     return romanval;
 };
