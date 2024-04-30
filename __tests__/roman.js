@@ -28,3 +28,14 @@ test("tests that anythong above 3999 returns false", function () {
     expect(roman(4000)).toBe(false)
 })
 
+test("tests that the while loop works", function () {
+    expect(roman(3999)).toBe("MMMCCCCCCCCCLXXXXVIIII")
+})
+
+test("Returns false if the input is not an integer (passes 1.2)", function () {
+    expect(roman("1.2")).toBe(false)
+})
+
+test("checks input of 1", function () {
+    expect(roman(1)).toBe("I")
+})
