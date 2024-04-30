@@ -6,6 +6,10 @@ module.exports = function roman(number) {
         return false
     }
     
+    if (number < 1 || number > 3999){
+        return false
+    }
+
     let romanval = ""
     while(number > 0){
         if (number >= 1000){
