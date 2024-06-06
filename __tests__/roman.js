@@ -33,7 +33,7 @@ test("tests that the while loop works", function () {
 })
 
 test("Returns false if the input is not an integer (passes 1.2)", function () {
-    expect(roman("1.2")).toBe(false)
+    expect(roman(1.2)).toBe(false)
 })
 
 test("checks input of 1", function () {

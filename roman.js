@@ -36,3 +36,7 @@ module.exports = function roman(number) {
     return romanval;
 };
 
+if (require.main === module) {
+    const inputNumber = process.argv[2];
+    console.log(module.exports(inputNumber));
+}
