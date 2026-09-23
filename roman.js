@@ -5,12 +5,20 @@ module.exports = function roman(number) {
     if (!Number.isInteger(number)) {
         return false
     }
-    
+     /*
+     * Check if number is in accepted range
+     */
     if (number < 1 || number > 3999){
         return false
     }
-
+    
     let romanval = ""
+     /*
+     * Convert numbers
+     * This works by checking if the current value is greater than
+     * the next roman numberal, largest to smalles. If it is, subtract the 
+     * roman numeral's value and add the roman numeral to the output string
+     */
     while(number > 0){
         if (number >= 1000){
             number -= 1000
