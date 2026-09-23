@@ -4,35 +4,35 @@ test("Returns true because it is a valid email", function () {
     expect(verifyEmail("abcd@yahoo.com")).toBe(true)
 })
 
-test("returns true with all capitol input to show it's not case sensitive", function () {
+test("Returns true with all capitol input to show it's not case sensitive", function () {
     expect(verifyEmail("CAPITOL@LETTERS.COM")).toBe(true)
 })
 
-test("returns false if empty", function () {
+test("Returns false if empty", function () {
     expect(verifyEmail("")).toBe(false)
 })
 
-test("returns false to a random string", function () {
+test("Returns false to a random string", function () {
     expect(verifyEmail("asdoifghjasdg")).toBe(false)
 })
 
-test("returns false if there is no @", function () {
+test("Returns false if there is no @", function () {
     expect(verifyEmail("abcd.gmail.com")).toBe(false)
 })
 
-test("returns false when using restricted characters", function () {
+test("Returns false when using restricted characters", function () {
     expect(verifyEmail("/@^.com")).toBe(false)
 })
 
-test("returns false if there are consecutive dots ..com", function () {
+test("Returns false if there are consecutive dots ..com", function () {
     expect(verifyEmail("qwerty@gmail..com")).toBe(false)
 })
 
-test("returns false for a domain with only one letter", function () {
+test("Returns false for a domain with only one letter", function () {
     expect(verifyEmail("mailg@mailg.c")).toBe(false)
 })
 
-test("returns false because the shrek is not an email address", function () {
+test("Returns false because the shrek is not an email address", function () {
     expect(verifyEmail(`SHREK
     Written by
     Ted Elliott
