@@ -24,4 +24,4 @@ The two unit tests use the [Jest testing framework](https://jestjs.io/) to verif
 
 verifyEmail.js determines if an email input is a valid email address (based on a beautifully horrible regular expression).
 
-Similarly, veryifyPassword.js determines if a password input meets the following criteria: contains at least, 8 characters, one lowecase letter, one uppercase letter, one numerical digit, one symbol (!@#$%^&*) and does not contain invalid characters (spaces and other symbols not listed).
+Similarly, veryifyPassword.js determines if a password input meets the following criteria: contains at least, 8 characters, one lowercase letter, one uppercase letter, one numerical digit, one symbol (!@#$%^&*) and does not contain invalid characters (spaces and other symbols not listed).
